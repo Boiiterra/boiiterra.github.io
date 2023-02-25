@@ -1,0 +1,17 @@
+* {
+    background-color: #120612;
+}
+
+.welcome {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    width: 100%;
+    /* padding: 50; */
+    color: #458756;
+}
+
+span {
+    color: #fa5ba5;
+}
