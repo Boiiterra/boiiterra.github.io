@@ -1,24 +1,80 @@
 * {
     background-color: #120612;
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", Arial, Colibri, sans-serif;
 }
 
 .welcome {
     left: 0;
     position: absolute;
     text-align: center;
-    top: 5%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     /* padding: 50; */
     color: #458756;
 }
 
+.profile_picture-cont {
+    text-align: center;
+}
+
+@keyframes the_green {
+    0% {background-image: -moz-linear-gradient(0deg, #65a974, #0f3613); }
+    10% {background-image: -moz-linear-gradient(36deg, #65a974, #0f3613); }
+    20% {background-image: -moz-linear-gradient(72deg, #65a974, #0f3613); }
+    30% {background-image: -moz-linear-gradient(108deg, #65a974, #0f3613); }
+    40% {background-image: -moz-linear-gradient(144deg, #65a974, #0f3613); }
+    50% {background-image: -moz-linear-gradient(180deg, #65a974, #0f3613); }
+    60% {background-image: -moz-linear-gradient(144deg, #65a974, #0f3613); }
+    70% {background-image: -moz-linear-gradient(108deg, #65a974, #0f3613); }
+    80% {background-image: -moz-linear-gradient(72deg, #65a974, #0f3613); }
+    90% {background-image: -moz-linear-gradient(36deg, #65a974, #0f3613); }
+    100% {background-image: -moz-linear-gradient(0deg, #65a974, #0f3613); }
+}
+
+@keyframes bdr {
+    from {border-radius: 0%;}
+    to {border-radius: 50%;}
+}
+
+.profile_picture {
+    border-radius: 50%;
+    margin: 0;
+    padding: 5px;
+    color: #549126;
+    background-image: -moz-linear-gradient(135deg, #65a974, #0f3613); 
+    animation: the_green 1s infinite, bdr 1s;
+}
+
+@keyframes apr_title {
+    from {color: black;}
+    to {color: #458756;}
+}
+
 .a_title {
+    padding-top: 25px;
     font-size: 1.9em;
+    animation: apr_title 1s;
+}
+
+.about_me-cont {
+    padding-top: 10px;
+}
+
+@keyframes apr_about {
+    from {color: black;}
+    to {color: #659740;}
 }
 
 .about {
     font-size: 1.4em;
+    padding-top: 13px;
     color: #659740;
+    opacity: 60%;
+    animation: apr_about 1s;
 }
 
 span {
