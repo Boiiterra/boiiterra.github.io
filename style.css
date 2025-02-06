@@ -18,7 +18,6 @@
 
 .profile_picture-cont {
     text-align: center;
-    max-width: 150px;
 }
 
 @keyframes the_green {
@@ -44,6 +43,7 @@
     border-radius: 50%;
     margin: 0;
     padding: 5px;
+    max-width: 150px;
     color: #549126;
     background-image: -moz-linear-gradient(135deg, #65a974, #0f3613);
     animation: the_green 1s infinite, bdr 1s;
